@@ -68,8 +68,6 @@ function App() {
         </div>
       </section>
 
-      {/* Footer spacer for white background continuity */}
-      <div className="footer-spacer"></div>
     </>
   )
 }
