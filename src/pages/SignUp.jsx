@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+import { validateSignUp } from '../utils/validation'
 
 export default function SignUp() {
   const { user, signUp } = useAuth()
@@ -17,22 +16,10 @@ export default function SignUp() {
     setForm((prev) => ({ ...prev, [field]: value }))
   }
 
-  function validate() {
-    const next = {}
-    if (!form.name.trim()) next.name = 'Full name is required.'
-    if (!form.email.trim()) next.email = 'Email is required.'
-    else if (!emailPattern.test(form.email)) next.email = 'Enter a valid email address.'
-    if (!form.password) next.password = 'Password is required.'
-    else if (form.password.length < 6) next.password = 'Password must be at least 6 characters.'
-    if (!form.confirm) next.confirm = 'Please confirm your password.'
-    else if (form.confirm !== form.password) next.confirm = 'Passwords do not match.'
-    return next
-  }
-
   function handleSubmit(e) {
     e.preventDefault()
     setFormError('')
-    const v = validate()
+    const v = validateSignUp(form)
     setErrors(v)
     if (Object.keys(v).length) return
     const res = signUp({ name: form.name.trim(), email: form.email.trim(), password: form.password })

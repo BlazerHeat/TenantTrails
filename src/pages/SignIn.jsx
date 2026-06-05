@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { Link, Navigate, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
-
-const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+import { validateSignIn } from '../utils/validation'
 
 export default function SignIn() {
   const { user, signIn } = useAuth()
@@ -14,18 +13,10 @@ export default function SignIn() {
 
   if (user) return <Navigate to="/dashboard" replace />
 
-  function validate() {
-    const next = {}
-    if (!email.trim()) next.email = 'Email is required.'
-    else if (!emailPattern.test(email)) next.email = 'Enter a valid email address.'
-    if (!password) next.password = 'Password is required.'
-    return next
-  }
-
   function handleSubmit(e) {
     e.preventDefault()
     setFormError('')
-    const v = validate()
+    const v = validateSignIn({ email, password })
     setErrors(v)
     if (Object.keys(v).length) return
     const res = signIn(email.trim(), password)
