@@ -56,6 +56,20 @@ function ReviewItem({ review, currentEmail, onAddComment }) {
       </div>
       <p className="review-text">{review.text}</p>
 
+      {review.attachments?.length > 0 && (
+        <div className="review-attachments">
+          {review.attachments.map((a, i) => (
+            a.type.startsWith('image/') ? (
+              <a key={i} href={a.dataUrl} target="_blank" rel="noreferrer" className="review-attachment">
+                <img src={a.dataUrl} alt={a.name} />
+              </a>
+            ) : (
+              <video key={i} src={a.dataUrl} controls className="review-attachment review-video" />
+            )
+          ))}
+        </div>
+      )}
+
       {review.comments.length > 0 && (
         <div className="review-comments-meta">💬 {review.comments.length} comment{review.comments.length === 1 ? '' : 's'}</div>
       )}
@@ -109,8 +123,8 @@ export default function ApartmentDetail() {
 
   if (!apartment) return <Navigate to="/dashboard" replace />
 
-  function handleSubmit({ rating, text }) {
-    addReview({ apartmentId: id, user, rating, text })
+  function handleSubmit({ rating, text, attachments }) {
+    addReview({ apartmentId: id, user, rating, text, attachments })
     setDialogOpen(false)
   }
 

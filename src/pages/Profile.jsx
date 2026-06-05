@@ -88,10 +88,10 @@ export default function Profile() {
       {editing && (
         <ReviewDialog
           mode="edit"
-          initial={{ rating: editing.rating, text: editing.text }}
+          initial={{ rating: editing.rating, text: editing.text, attachments: editing.attachments ?? [] }}
           onClose={() => setEditing(null)}
-          onSubmit={({ rating, text }) => {
-            updateReview(editing.id, { rating, text })
+          onSubmit={({ rating, text, attachments }) => {
+            updateReview(editing.id, { rating, text, attachments })
             setEditing(null)
           }}
         />

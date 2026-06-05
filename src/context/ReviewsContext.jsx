@@ -25,7 +25,7 @@ export function ReviewsProvider({ children }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(reviews))
   }, [reviews])
 
-  const addReview = useCallback(({ apartmentId, user, rating, text }) => {
+  const addReview = useCallback(({ apartmentId, user, rating, text, attachments = [] }) => {
     const review = {
       id: makeId('r'),
       apartmentId,
@@ -33,6 +33,7 @@ export function ReviewsProvider({ children }) {
       userName: user.name,
       rating,
       text: text.trim(),
+      attachments,
       createdAt: new Date().toISOString(),
       comments: [],
     }
@@ -40,9 +41,13 @@ export function ReviewsProvider({ children }) {
     return review
   }, [])
 
-  const updateReview = useCallback((id, { rating, text }) => {
+  const updateReview = useCallback((id, { rating, text, attachments }) => {
     setReviews((prev) =>
-      prev.map((r) => (r.id === id ? { ...r, rating, text: text.trim() } : r))
+      prev.map((r) =>
+        r.id === id
+          ? { ...r, rating, text: text.trim(), ...(attachments !== undefined && { attachments }) }
+          : r
+      )
     )
   }, [])
 
