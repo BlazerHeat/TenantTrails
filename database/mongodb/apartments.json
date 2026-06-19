@@ -1,0 +1,62 @@
+[
+  {
+    "apartment_id": 1,
+    "slug": "marlstone",
+    "name": "The Marlstone",
+    "address": "5540 Spring Garden Rd",
+    "neighbourhood": "Spring Garden",
+    "description": "Boutique low-rise off Spring Garden Road, walking distance to shops and parks.",
+    "landlord": "Marlstone Holdings",
+    "units": 32,
+    "year_built": 2018,
+    "image_url": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "apartment_id": 2,
+    "slug": "park-victoria",
+    "name": "Park Victoria",
+    "address": "1496 Carlton St",
+    "neighbourhood": "South End",
+    "description": "Mid-rise in the South End with on-site management and underground parking.",
+    "landlord": "Templeton Properties",
+    "units": 110,
+    "year_built": 1992,
+    "image_url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "apartment_id": 3,
+    "slug": "le-marchant-towers",
+    "name": "Le Marchant Towers",
+    "address": "1585 Le Marchant St",
+    "neighbourhood": "West End",
+    "description": "High-rise tower in a quiet residential neighbourhood.",
+    "landlord": "Killam Properties",
+    "units": 88,
+    "year_built": 1975,
+    "image_url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "apartment_id": 4,
+    "slug": "fenwick-tower",
+    "name": "Fenwick Tower",
+    "address": "5599 Fenwick St",
+    "neighbourhood": "Downtown",
+    "description": "Iconic downtown high-rise with panoramic harbour views.",
+    "landlord": "Templeton Properties",
+    "units": 220,
+    "year_built": 1971,
+    "image_url": "https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "apartment_id": 5,
+    "slug": "southpoint",
+    "name": "Southpoint Apartments",
+    "address": "1050 South Park St",
+    "neighbourhood": "South End",
+    "description": "Family-friendly low-rise across from the Public Gardens.",
+    "landlord": "Southpoint Realty",
+    "units": 64,
+    "year_built": 1988,
+    "image_url": "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=800&q=80"
+  }
+]

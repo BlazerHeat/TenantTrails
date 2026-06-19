@@ -1,0 +1,23 @@
+[
+  {
+    "comment_id": 1,
+    "review_id": 4,
+    "user_id": 1,
+    "comment_text": "How long was the parking waitlist when you moved in?",
+    "created_at": "2026-04-04T00:00:00.000Z"
+  },
+  {
+    "comment_id": 2,
+    "review_id": 6,
+    "user_id": 1,
+    "comment_text": "Did you ever raise the laundry issue with management? Curious if they responded.",
+    "created_at": "2026-02-12T00:00:00.000Z"
+  },
+  {
+    "comment_id": 3,
+    "review_id": 9,
+    "user_id": 1,
+    "comment_text": "Same experience here with the elevators. Did building management offer any timeline for fixes?",
+    "created_at": "2026-02-02T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "review_id": 1,
+    "apartment_id": 1,
+    "user_id": 2,
+    "rating": 5,
+    "review_text": "Brand new building, professional management, easy walk to everything on Spring Garden.",
+    "created_at": "2026-02-12T00:00:00.000Z"
+  },
+  {
+    "review_id": 2,
+    "apartment_id": 2,
+    "user_id": 1,
+    "rating": 5,
+    "review_text": "Quietest building I have ever lived in. Walls are thick and the staff respond same-day.",
+    "created_at": "2026-03-02T00:00:00.000Z"
+  },
+  {
+    "review_id": 3,
+    "apartment_id": 2,
+    "user_id": 3,
+    "rating": 4,
+    "review_text": "Great place if you can stomach the rent. Underground parking is a real perk in winter.",
+    "created_at": "2026-01-20T00:00:00.000Z"
+  },
+  {
+    "review_id": 4,
+    "apartment_id": 3,
+    "user_id": 4,
+    "rating": 4,
+    "review_text": "Good building overall. Management is professional and responsive within 48 hours for most issues. The parking situation is genuinely bad though. I waited five months for a spot.",
+    "created_at": "2026-04-01T00:00:00.000Z"
+  },
+  {
+    "review_id": 5,
+    "apartment_id": 3,
+    "user_id": 1,
+    "rating": 4,
+    "review_text": "Lived here for two years. Quiet neighbours, solid construction, and the Quinpool Road location is extremely convenient. Elevator breaks down about once a month but they fix it within the day.",
+    "created_at": "2026-03-19T00:00:00.000Z"
+  },
+  {
+    "review_id": 6,
+    "apartment_id": 3,
+    "user_id": 5,
+    "rating": 3,
+    "review_text": "Carpets in the hallway are tired and the laundry room has long waits on weekends. Unit itself is fine.",
+    "created_at": "2026-02-08T00:00:00.000Z"
+  },
+  {
+    "review_id": 7,
+    "apartment_id": 4,
+    "user_id": 1,
+    "rating": 4,
+    "review_text": "The view from the 28th floor is incredible. You can see the harbour, Dartmouth, and McNabs Island. Location is unbeatable for downtown.",
+    "created_at": "2026-03-10T00:00:00.000Z"
+  },
+  {
+    "review_id": 8,
+    "apartment_id": 4,
+    "user_id": 1,
+    "rating": 4,
+    "review_text": "Rent is very reasonable for downtown Halifax. The unit itself is fine, nothing fancy but functional. Laundry facilities are dated but they work.",
+    "created_at": "2026-02-22T00:00:00.000Z"
+  },
+  {
+    "review_id": 9,
+    "apartment_id": 4,
+    "user_id": 6,
+    "rating": 2,
+    "review_text": "Elevators are constantly broken and the lobby door lock failed twice this year. Views are great but the building feels neglected.",
+    "created_at": "2026-01-30T00:00:00.000Z"
+  },
+  {
+    "review_id": 10,
+    "apartment_id": 5,
+    "user_id": 1,
+    "rating": 3,
+    "review_text": "Decent location near the park but the building has issues. Heater in my unit broke during winter and it took four days to fix. Deposit was returned in full though, which I appreciated.",
+    "created_at": "2026-03-05T00:00:00.000Z"
+  },
+  {
+    "review_id": 11,
+    "apartment_id": 5,
+    "user_id": 1,
+    "rating": 3,
+    "review_text": "Average experience overall. The laundry room is always busy and half the machines are broken. Common areas are cleaned only weekly.",
+    "created_at": "2026-02-14T00:00:00.000Z"
+  },
+  {
+    "review_id": 12,
+    "apartment_id": 5,
+    "user_id": 7,
+    "rating": 2,
+    "review_text": "Walls are thin, neighbours noisy, and the front entrance lock has been broken for weeks. Looking to move out at end of lease.",
+    "created_at": "2026-01-18T00:00:00.000Z"
+  },
+  {
+    "review_id": 13,
+    "apartment_id": 5,
+    "user_id": 8,
+    "rating": 2,
+    "review_text": "Rent is below market for South End, which is the only redeeming feature. Pest issues in summer and management is slow.",
+    "created_at": "2026-01-04T00:00:00.000Z"
+  }
+]
